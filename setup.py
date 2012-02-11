@@ -14,7 +14,7 @@ setup(
     author_email='topfstedt@schneevonmorgen.com',
     url='https://bitbucket.org/fabian/django-taggit-autosuggest',
     packages=find_packages(),
-    package_data={'': ['static', 'conf']},
+    package_data={'': ['static/*', 'conf/*']},
     include_package_data=True,
     classifiers=[
         'Development Status :: 4 - Beta',
