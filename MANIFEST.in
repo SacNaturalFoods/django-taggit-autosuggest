@@ -1,1 +1,2 @@
 recursive-include taggit_autosuggest/static *.css *.js
+recursive-include taggit_autosuggest/conf *.mo *.po
