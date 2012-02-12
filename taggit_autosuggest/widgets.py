@@ -32,7 +32,6 @@ class TagAutoSuggest(forms.TextInput):
 
         js = u"""
             <script type="text/javascript">
-            (function ($) {
                 var tags_as_string;
 
                 $(document).ready(function (){
@@ -59,7 +58,6 @@ class TagAutoSuggest(forms.TextInput):
                         $("#%(result_id)s").val(tags_as_string);
                     });
                 });
-            })(django.jQuery);
             </script>""" % {
                 'result_id': result_attrs['id'],
                 'widget_id': widget_attrs['id'],
